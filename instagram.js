@@ -233,20 +233,20 @@ arr2.forEach((value, index) => {
 
 
 // flag=1 and then 0 in if else condition is basically a toggle like condition 
-flag=0;
-let bookmark=document.getElementsByClassName('ri-bookmark-fill');
+flag = 0;
+let bookmark = document.getElementsByClassName('ri-bookmark-fill');
 
-arr2.forEach((value,index)=>{
- bookmark[index].addEventListener('click',function(){
- if(flag==0){
-    bookmark[index].style.color="#d5c9c9";
-    flag=1;
-}
-   
- else{
-    bookmark[index].style.color="black";
-    flag=0;
- }
- })
+arr2.forEach((value, index) => {
+    bookmark[index].addEventListener('click', function () {
+        if (flag == 0) {
+            bookmark[index].style.color = "#d5c9c9";
+            flag = 1;
+        }
+
+        else {
+            bookmark[index].style.color = "black";
+            flag = 0;
+        }
+    })
 }
 )
