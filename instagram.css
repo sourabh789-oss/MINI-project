@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+main {
+    margin-top: 12px;
+    width: 400px;
+    height: 590px;
+    border-bottom: 2px solid black;
+    background-color: white;
+    border-radius: 22px;
+    position: relative;
+
+}
+
+#scrollbar{
+    
+    width: 400px;
+    height: 590px;
+    overflow-y: auto;
+}
+
+#scrollbar::-webkit-scrollbar{
+    display: none;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid rgb(188, 184, 184); */
+ position: relative;
+ z-index: 4;
+
+
+}
+
+#navbar div:first-child img {
+    margin: 12px 0 0 13px;
+    width: 95px;
+
+}
+
+#navbar div:first-child i {
+    position: relative;
+    bottom: 9px;
+}
+
+ div .ri-heart-line {
+    font-size: 32px;
+    position: relative;
+    bottom: 11px;
+
+}
+
+.ri-send-plane-line {
+    font-size: 32px;
+    position: relative;
+    bottom: 9px;
+
+}
+
+#navbar div:nth-child(2) img {
+    width: 48px;
+}
+
+.fixed {
+    border-top: 1px solid rgb(188, 184, 184);
+    width: 100%;
+    position: absolute;
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+    /*now this position will work according to our main element */
+    bottom: 0px;
+z-index: 10;
+background-color:white;
+font-weight: bolder;
+}
+
+#footer {
+    /* position: sticky; */
+    /* top: 109%; */
+   
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#footer i {
+    font-size: 29px;
+}
+
+.im {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    bottom: 4px;
+
+}
+
+/* #storyfeature{
+ width: 400px;
+ height: 100px;
+position: relative;
+
+
+
+} */
+.storiyan {
+    width: 100%;
+    height: 100px;
+    /* position: relative; */
+    display: flex;
+    column-gap: 12px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    border-bottom: 1px solid rgb(188, 184, 184);
+}
+
+.storiyan::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+#storyfeature .storiyan .story {
+    width: 100%;
+    height: 190px;
+    margin-left: 5px;
+
+}
+
+.storiyan .story img {
+    width: 79px;
+    height: 79px;
+
+    border-radius: 50%;
+    border: 3px solid rgb(205, 6, 6);
+    object-fit: cover;
+    object-position: center center;
+
+}
+
+#full-screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+    bottom: 0px;
+    box-sizing: border-box;
+    transition: border linear 10s;
+    border-top: 3px solid rgb(205, 6, 6);
+
+}
+
+#post {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 0 0 10px;
+}
+
+#post b {
+    position: relative;
+    bottom: 22px;
+    padding-left: 7px;
+
+}
+
+.removescroll {
+    height: 27vw;
+    /* overflow-y: auto; */
+}
+
+/* .removescroll::-webkit-scrollbar {
+    display: none;
+} */
+.removescroll .postphoto{
+    width: 100%; 
+    /* height: 26vw; */
+position: relative;/* now love emoji will inherit this property relative and shift position of love emoji according to this */
+
+
+}
+
+.postphoto img {
+    width: 100%;
+    
+     object-fit: cover;
+ object-position: center center;
+ 
+ }
+.removescroll .postphoto .loveemoji{
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%) scale(0);
+   /* font-size: 80px; */
+   color: red;
+   /* display:none; instead we use opacity property */
+   opacity: 1;
+   transition:all ease-out 0.6s;
+}
+
+
+
+
+.postphoto .flexed {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9px 0 6px;
+}
+.flexed div .ri-heart-fill{
+position: relative;
+    top: -9px;
+    font-size: 32px;
+   color: rgb(216, 213, 213);
+   
+}
+
